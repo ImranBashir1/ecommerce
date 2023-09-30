@@ -39,24 +39,6 @@ const Header = () => {
                         0
                     </span>
                 </div>
-                {session && (
-                    <>
-                        <Image
-                            src={session?.user?.image as string}
-                            alt="user avatar"
-                            width={40}
-                            height={40}
-                            className="rounded-full object-cover"
-                        />
-                        <div
-                            onClick={() => signOut()}
-                            className="headerAuthDiv cursor-pointer px-2 gap-x-1"
-                        >
-                            <FiLogOut className="text-2xl" />
-                            <p className="text-sm font-semibold">Logout</p>
-                        </div>
-                    </>
-                )}
             </Container>
         </div>
     );
